@@ -7,10 +7,21 @@
     <title>Document</title>
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    
 </head>
 <body>
     <div class="container py-4 ">
         <h1 class=" text-primary text-center">Benvenuto in Laravel</h1>
+    </div>
+     {{-- recupero i dati dal controller --}}
+    <div class="container">
+        <ul>
+            @foreach($movies as $movie)
+            <li>
+                {{ $movie['title']}} {{ $movie['original_title']}}
+            </li>
+            @endforeach
+        </ul>
     </div>
 </body>
 </html>
