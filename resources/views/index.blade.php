@@ -9,12 +9,18 @@
    
      {{-- recupero i dati dal controller --}}
     <div class="container">
-        <ul>
+        <div class="mt-5 row row-cols-4 g-4">
             @foreach($movies as $movie)
-            <li>
-                {{ $movie['title']}} {{ $movie['original_title']}}
-            </li>
+                <div class="col ">
+                    <x-card 
+                        title="{{ $movie['title'] }}"
+                        text="{{ $movie['original_title'] }}"
+                        nationality="{{ $movie['nationality']}}"
+                        date="{{ $movie['date'] }}"
+                        vote="{{ $movie['vote'] }}">
+                    </x-card>
+                </div>
             @endforeach
-        </ul>
+        </div>
     </div>
 @endsection
