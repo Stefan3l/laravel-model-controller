@@ -2,7 +2,7 @@
     'title', 'text' , 'nationality', 'date', 'vote'
 ])
     
-        <div class="card h-100 shadow-black shadow-lg">
+        <div class="card h-100 shadow-black shadow-lg hover-card">
             <div class="py-3">
                 <h2 class="text-center fs-3 fw-bold">{{ Str::limit($title, 15) }}</h2>
                 <hr>

@@ -1,8 +1,18 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url("https://fonts.bunny.net/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+// Custom styles
+
+.hover-card {
+    transition: transform 0.3s;
+
+    *:hover {
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+    }
+}
